@@ -1,0 +1,75 @@
+.profile-pic-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-pic-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px dashed black;
+  background-color: #f0f0f0; /* Optional: Placeholder background color */
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-pic-container {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .forms {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .form {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+/* for teblate */
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .profile-pic-container {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .form {
+    margin-left: auto !important;
+  }
+  .form {
+    width: 90% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .profiles {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
